@@ -16,7 +16,6 @@ public class Pasajero {
 	
 	public Pasajero() throws IOException {
 		premium = false;
-		
 		System.out.println("Escribe el nombre del pasajero: ");
 		InputStreamReader isr = new InputStreamReader(System.in);
 		BufferedReader br = new BufferedReader (isr);
@@ -27,13 +26,13 @@ public class Pasajero {
 		br = new BufferedReader (isr);
 		id = Integer.parseInt(br.readLine());
 		
-		String cadena = null;
+		String cadena = "c";
 		
-		while(!cadena.equals("Y") || !cadena.equals("y") ||!cadena.equals("N") ||!cadena.equals("n")) {
-		System.out.println("¿Es premium? (Y/N): ");
-		isr = new InputStreamReader(System.in);
-		br = new BufferedReader (isr);
-		cadena = br.readLine();
+		while(!cadena.equals("Y") && !cadena.equals("y") && !cadena.equals("N") && !cadena.equals("n")) {
+			System.out.println("¿Es premium? (Y/N): ");
+			isr = new InputStreamReader(System.in);
+			br = new BufferedReader (isr);
+			cadena =br.readLine();
 		}
 		
 		if(cadena.equals("Y") || cadena.equals("y")) {
