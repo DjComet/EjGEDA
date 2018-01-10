@@ -10,5 +10,23 @@ public class Principal {
 		
 	}
 
+	public void llegaPasajero()
+	{
+		
+	}
 	
+	public void subePasajero()
+	{
+		
+	}
+	
+	public void verListadoPasajeros()
+	{
+		
+	}
+	
+	public void salir()
+	{
+		
+	}
 }
