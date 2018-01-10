@@ -6,6 +6,6 @@ public class Avion {
 	public String destino;
 	public int filas;
 	public int columnas;
-	public Pasajero pasajero [][];
+	public Pasajero[][] pasajero ;
 	
 }
