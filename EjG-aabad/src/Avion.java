@@ -8,4 +8,11 @@ public class Avion {
 	public int columnas;
 	public Pasajero[][] pasajero ;
 	
+	public Avion(int n, int h, String d)
+	{
+		filas = 10;
+		columnas = 4;
+		pasajero = new Pasajero[filas][columnas];
+		
+	}
 }
