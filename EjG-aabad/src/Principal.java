@@ -7,12 +7,12 @@ public class Principal {
 
 	private static  ColaListaEnlazada cola;
 	private static  Avion avionPrincipal;
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		cola = new ColaListaEnlazada();
 		avionPrincipal = new Avion(78541, 0524, "AprobadoLandia");
 		
-		llegaPasajero();
+		llegaPasajero(); 
 		subePasajero();
 		llegaPasajero();
 		subePasajero();
@@ -54,7 +54,7 @@ public class Principal {
 			System.out.print("\n");
 		}
 	}
-	public static void subePasajero() throws NumberFormatException, IOException
+	public static void subePasajero() throws Exception
 	{
 		int f = 0,c = 0;
 		
@@ -102,6 +102,7 @@ public class Principal {
 				avionPrincipal.matrizPasajeros[f][c] = (Pasajero) cola.frente.elemento;
 				
 			}
+			cola.quitar();
 		}
 		else//cola vacia
 		{
