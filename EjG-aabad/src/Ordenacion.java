@@ -14,7 +14,7 @@ public class Ordenacion {
 	 
 	 do{
 		 while((a[i].compareTo(pivote)<0) && (i<ultimo)) i++;
-		 while((a[j].compareTo(pivote)>0) && (j<ultimo)) i++;
+		 while((a[j].compareTo(pivote)>0) && (j>primero)) j--;
 		 
 		 if(i<=j)
 		 {
