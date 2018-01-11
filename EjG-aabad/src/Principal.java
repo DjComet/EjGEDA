@@ -12,7 +12,7 @@ public class Principal {
 		cola = new ColaListaEnlazada();
 		avionPrincipal = new Avion(78541, 0524, "AprobadoLandia");
 		
-		llegaPasajero();
+		llegaPasajero(); 
 		subePasajero();
 		llegaPasajero();
 		subePasajero();
