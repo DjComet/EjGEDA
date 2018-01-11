@@ -6,13 +6,13 @@ public class Avion {
 	public String destino;
 	public int filas;
 	public int columnas;
-	public Pasajero[][] pasajero ;
+	public Pasajero[][] matrizPasajeros;
 	
 	public Avion(int n, int h, String d)
 	{
 		filas = 10;
 		columnas = 4;
-		pasajero = new Pasajero[filas][columnas];
+		matrizPasajeros = new Pasajero[filas][columnas];
 		
 	}
 }
