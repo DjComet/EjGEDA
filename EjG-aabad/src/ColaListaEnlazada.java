@@ -30,17 +30,16 @@ public class ColaListaEnlazada {
 		return (frente==null);
 	}
 	
-	public Object quitar() throws Exception
+	public void quitar() throws Exception
 	{
-		Object aux;
+		
 		if(!colaVacia())
 		{
-			aux=frente.elemento;
 			frente=frente.siguiente;
 		}
 		else throw new Exception("Eliminar de una cola vacía");
 		
-		return aux;
+		
 	}
 	
 	public void borrarCola()
